@@ -2,13 +2,11 @@ using System.ComponentModel.DataAnnotations;
 
 namespace GreatRoutine.Api.DTOs
 {
-    public class RegisterDto
+    public class LoginDTO
     {
-        [Required]
-        public string Nome { get; set; }
         [Required, EmailAddress]
         public string Email { get; set; }
-        [Required, MinLength(6)]
+        [Required]
         public string Senha { get; set; }
     }
 }
