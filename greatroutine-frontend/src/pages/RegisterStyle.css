@@ -1,0 +1,95 @@
+/* Container da tela */
+.register-container {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(135deg, #d35400, #e67e22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Card */
+.register-card {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  padding: 40px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Título */
+.register-card h1 {
+  color: #fff;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+/* FORM (ESSENCIAL) */
+.register-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Inputs */
+.register-card input {
+  padding: 14px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Botão */
+.register-card button {
+  margin-top: 5px;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background: #ff9800;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.register-card button:hover {
+  background: #d35400;
+}
+
+/* Link voltar */
+.link {
+  margin-top: 18px;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+/* Mensagens */
+.error {
+  color: #ffcccc;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.success {
+  color: #c8ffcc;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+  .register-card {
+    padding: 28px;
+  }
+}

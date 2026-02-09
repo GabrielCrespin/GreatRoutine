@@ -83,7 +83,7 @@ namespace GreatRoutine.Api.Controllers
         }
 
         // Atualizar Tarefa
-        [HttpPut]
+        [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, TarefaUpdateDto dto)
         {
             int userId = GetUserId();
@@ -108,7 +108,7 @@ namespace GreatRoutine.Api.Controllers
         }
 
         //Deletar Tarefa
-        [HttpDelete]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
             int userId = GetUserId();
